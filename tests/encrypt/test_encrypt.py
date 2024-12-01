@@ -13,8 +13,8 @@ def test_encrypt_message():
     key_greater_than_length = 9
 
     expec_rever_message = valid_message[::-1]
-    expec_odd_key_result = "sem_egas" 
-    expec_even_key_result = "ega_ssem" 
+    expec_odd_key_result = "sem_egas"
+    expec_even_key_result = "ega_ssem"
 
     with pytest.raises(TypeError, match="tipo inválido para key"):
         encrypt_message(valid_message, invalid_key)
