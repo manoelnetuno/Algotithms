@@ -9,8 +9,7 @@ def study_schedule(permanence_period, target_time):
     ):
         return None
     for start, end in permanence_period:
-      if start <= target_time <= end:
-         contador += 1
-    
+        if start <= target_time <= end:
+            contador += 1
 
     return contador
