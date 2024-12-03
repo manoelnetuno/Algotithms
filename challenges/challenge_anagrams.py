@@ -1,5 +1,3 @@
-from collections import Counter
-
 
 def merge(left, right):
     merged = []
@@ -44,6 +42,6 @@ def is_anagram(first_string, second_string):
     if not first_string or not second_string:
         return (first_sorted, second_sorted, False)
 
-    are_anagrams = Counter(first_sorted) == Counter(second_sorted)
+    are_anagram = first_sorted == second_sorted
 
-    return (first_sorted, second_sorted, are_anagrams)
+    return (first_sorted, second_sorted, are_anagram)
